@@ -12,7 +12,7 @@ function handleClick(e) {
 
 /* Write your implementation of displayMessage() */
 function displayMessage(msg) {
-  document.getElementById("greeting").innerText = msg;
+  document.getElementById("greeting").textContent = msg;
 }
 
 /* Write your implementation of greet() */
