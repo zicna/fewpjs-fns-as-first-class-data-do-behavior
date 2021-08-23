@@ -10,4 +10,25 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
+const button = document.querySelector('button')
+const greeting = document.getElementById("greeting")
+button.addEventListener("click", handleClick())
+
+
+function displayMessage(s){
+  greeting.textContent = s
+}
+
+function greet(g) {
+  let time = parseInt(g)
+  if(time < 12 ){
+    return "Good Morning"
+  } else if (time >= 12 && time < 17 ) {
+    return "Good Afternoon"
+  } else {
+    return "Good Evening"
+  }
+};
+
 /* Write your implementation of displayMessage() */
+
